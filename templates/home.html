@@ -16,6 +16,7 @@
     </style>
 </head>
 <body>
+  {% include 'nav.html' %}
   <div class="container">
     
   <h1 class="text-center mt-2 mb-4">{{comp_name}} Careers</h1>
@@ -23,9 +24,17 @@
   <img class="img-fluid banner" src="static/cover.png" >
     <br>
   <h2 class="text-center mt-2 mb-4">About us</h2>
-  
-  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor hendrerit tellus, quis varius eros ullamcorper at. Sed ut libero id nibh pharetra suscipit. Vestibulum sodales mollis libero id gravida. Maecenas euismod feugiat nisi, ut rhoncus libero cursus laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras dictum quam purus, dignissim auctor velit dapibus sed. Sed lacinia, risus in scelerisque euismod, erat turpis fringilla justo, vitae sagittis leo ex vel ligula. Suspendisse finibus odio commodo lobortis molestie. Vestibulum leo quam, tristique vel finibus ut, hendrerit at tellus. Integer porta, purus et ornare iaculis, felis nunc sodales sem, at feugiat ante lacus dignissim tellus.</p>
-
+    
+  <div class="row">
+    <div class="col-md-6">
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.       Cras tempor hendrerit tellus, quis varius eros ullamcorper at. Sed ut         libero id nibh pharetra suscipit. Vestibulum sodales mollis libero id gravida. Maecenas euismod feugiat nisi, ut rhoncus libero cursus laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras dictum quam purus, dignissim auctor velit dapibus sed. Sed lacinia, risus in scelerisque euismod, erat turpis fringilla justo, vitae sagittis leo ex vel ligula. Suspendisse finibus odio commodo lobortis molestie. Vestibulum leo quam, tristique vel finibus ut, hendrerit at tellus.     Integer porta, purus et ornare iaculis, felis nunc sodales sem, at            feugiat ante lacus dignissim tellus.
+    </p>
+    </div>
+    <div class="d-none d-md-block col-md-6">
+    <img src="/static/people.jpg" height="320px" >
+    </div>
+  </div>
+    
   <h2 class="text-center mt-2 mb-4">Open Positions</h2>
   <div>
     {% for job in jobs %}
@@ -36,7 +45,7 @@
   </div>
   <div style="text-align: center">
     
-  <button type="button" class="btn btn-primary">Contact Us</button>
+  <a href="https://google.com" type="button" class="btn btn-primary">Contact Us</a >
   <p>Copyright 2023, AmazingSufiyan</p></p>
   </div>
   
